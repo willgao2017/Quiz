@@ -8,4 +8,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="TextStyle">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ImageStyle">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_width">80dp</item>
+    </style>
+
+
+    <style name="CbStyle">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
 </resources>

@@ -14,20 +14,25 @@
             android:id="@+id/question_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question_1" />
+            android:text="@string/question_1"
+            style="@style/TextStyle"
+            />
 
         <EditText
             android:id="@+id/answer_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:inputType="text"
+            />
 
 
         <TextView
             android:id="@+id/question_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question_2" />
+            android:text="@string/question_2"
+            style="@style/TextStyle"
+            />
 
 
         <RadioGroup
@@ -61,7 +66,9 @@
             android:id="@+id/question_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question_3" />
+            android:text="@string/question_3"
+            style="@style/TextStyle"
+            />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -94,80 +101,64 @@
             android:id="@+id/question_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question_4" />
+            android:text="@string/question_4"
+            style="@style/TextStyle"
+            />
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/relative_1" >
+
+                <CheckBox
+                    android:id="@+id/choice_1"
+                    android:onClick="onCheckboxClicked2"
+                    style="@style/CbStyle"
+                    />
+
+                <CheckBox
+                    android:id="@+id/choic_2"
+                    android:onClick="onCheckboxClicked2"
+                    style="@style/CbStyle"
+                    />
+
+                <CheckBox
+                    android:id="@+id/choice_3"
+                    android:onClick="onCheckboxClicked2"
+                    style="@style/CbStyle"
+                    />
+            </LinearLayout>
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/relative_1"
-            >
+            android:layout_toRightOf="@id/relative_1">
 
             <ImageView
                 android:id="@+id/image_1"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/trump1" />
+                android:src="@drawable/trump"
+                style="@style/ImageStyle"
+                />
 
             <ImageView
                 android:id="@+id/image_2"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
                 android:layout_below="@id/image_1"
-                android:src="@drawable/trump2" />
+                android:src="@drawable/enen"
+                style="@style/ImageStyle"
+                />
 
-            <TextView
+            <ImageView
                 android:id="@+id/image_3"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_below="@+id/image_2"
-                android:text="Neither of them"
-                />
-
-            <TextView
-                android:id="@+id/image_4"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_below="@+id/image_3"
-                android:text="Both of them"
-                />
+                android:layout_below="@id/image_2"
+                android:src="@drawable/putin"
+                style="@style/ImageStyle"
+                android:scaleType="centerCrop"                />
         </RelativeLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_toRightOf="@id/relative_1">
-
-            <CheckBox
-                android:id="@+id/choice_1"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:onClick="onCheckboxClicked2" />
-
-            <CheckBox
-                android:id="@+id/choic_2"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:onClick="onCheckboxClicked2" />
-
-            <CheckBox
-                android:id="@+id/choice_3"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:onClick="onCheckboxClicked2" />
-
-            <CheckBox
-                android:id="@+id/choice_4"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:onClick="onCheckboxClicked2" />
-        </LinearLayout>
 
         </RelativeLayout>
 
@@ -175,7 +166,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="submitAnswer"
-            android:text="Submit" />
+            android:text="Submit"
+            android:layout_margin="10dp"/>
 
     </LinearLayout>
 

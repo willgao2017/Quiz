@@ -73,9 +73,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (checked)
             giftscore = 25;
+        else
+            giftscore = 0;
 
     }
-
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
