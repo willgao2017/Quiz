@@ -2,6 +2,7 @@
     <string name="app_name">Quiz</string>
     <string name="question_1">1. What is the letter after \"w\" in alphabet?</string>
     <string name="question_2">2. 1+1=?</string>
-    <string name="question_3">2. 2+2>?</string>
+    <string name="question_3">3. 2+2>?</string>
+    <string name="question_4">4. Who do you like below?</string>
 
 </resources>

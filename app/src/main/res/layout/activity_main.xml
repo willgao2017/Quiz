@@ -12,21 +12,21 @@
 
         <TextView
             android:id="@+id/question_1"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/question_1" />
 
         <EditText
             android:id="@+id/answer_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"/>
+            android:inputType="text" />
 
 
         <TextView
             android:id="@+id/question_2"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/question_2" />
 
 
@@ -34,36 +34,148 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <RadioButton android:id="@+id/addresult_1"
+
+            <RadioButton
+                android:id="@+id/addresult_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/addresult_2"
+                android:onClick="onRadioButtonClicked"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/addresult_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/addresult_3"
+                android:onClick="onRadioButtonClicked"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/addresult_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"
-                android:onClick="onRadioButtonClicked"/>
+                android:onClick="onRadioButtonClicked"
+                android:text="3" />
         </RadioGroup>
 
         <TextView
             android:id="@+id/question_3"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/question_3" />
 
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/compare_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="1" />
+
+            <CheckBox
+                android:id="@+id/compare_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="2" />
+
+            <CheckBox
+                android:id="@+id/compare_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="5" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/question_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question_4" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative_1"
+            >
+
+            <ImageView
+                android:id="@+id/image_1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/trump1" />
+
+            <ImageView
+                android:id="@+id/image_2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/image_1"
+                android:src="@drawable/trump2" />
+
+            <TextView
+                android:id="@+id/image_3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/image_2"
+                android:text="Neither of them"
+                />
+
+            <TextView
+                android:id="@+id/image_4"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/image_3"
+                android:text="Both of them"
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/relative_1">
+
+            <CheckBox
+                android:id="@+id/choice_1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onCheckboxClicked2" />
+
+            <CheckBox
+                android:id="@+id/choic_2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="onCheckboxClicked2" />
+
+            <CheckBox
+                android:id="@+id/choice_3"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:onClick="onCheckboxClicked2" />
+
+            <CheckBox
+                android:id="@+id/choice_4"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:onClick="onCheckboxClicked2" />
+        </LinearLayout>
+
+        </RelativeLayout>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="submitAnswer"
             android:text="Submit" />
-
 
     </LinearLayout>
 
